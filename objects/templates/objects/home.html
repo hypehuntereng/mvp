@@ -335,46 +335,15 @@
                             <div class="container container--small">
                                 <div class="title-box title-box--center">
                                     <h2 class="heading  text-white" style="font-size: medium;">¿Quieres saber qué tenemos entre manos? ¡Déjanos tu correo y te lo contamos en 2 minutos!</h2>
+                                    <a href="{% url 'contacto_new' %}" class="button js-submit-button button--white-bg">Dejar Mail<span class="glyphicon glyphicon-plus"></span></a>
+                                    <h2>Dejanos tu Mail</h2>
+                                    <form method="POST" class="contacto-form">{% csrf_token %}
+                                        {{ form.as_p }}
+                                        <button type="submit" class="save btn btn-default">Apúntame</button>
+                                    </form>
+                                    {% block content %}
+                                    {% endblock %}
                                 </div>
-                            </div>
-                            <div class="cta_form-01__form_box">
-                                <form class="form   js-no-integration-form" id="landing-form" method="GET" id="landing-form" data-sheet-id="">
-                                    <div class="form__inputs">
-                                        <div class="form__input  ">
-                                            <div class="form__input__label_box">
-                                                <label class="form__input__label  text-white " for="EMAIL-14878-0">
-                                                </label>
-                                            </div>
-                                            <input class="text-input js-form-input  text-input--white " type="email" id="EMAIL-14878-0" name="email" required placeholder="your@email.com"/>
-                                        </div>
-                                        <div class="form__input  " style="display: none;">
-                                            <div class="form__input__label_box">
-                                                <label class="form__input__label  text-white " for="EMAIL-14878-0">
-                                                </label>
-                                            </div>
-                                            <input class="text-input js-form-input  text-input--white " type="text" name="tarifa" value="Newsletter"/>
-                                        </div>
-                                        <div class="form__button  ">
-                                            <button class="button js-submit-button button--white-bg" type="submit" onclick="SubForm()">
-                                                <span class="button__text">Unirme</span>
-                                                <div class="spinner"></div>
-                                                <div class="button__submit_success">
-                                                    <div class="button__success_circle "></div>
-                                                    <div>
-                                                        <svg class="button__success_tick" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
-                                                            <path class="button__success_tick_path" stroke="#FFF" d="M0 8l5.119 3.873L11.709.381" fill="none" fill-rule="evenodd" stroke-linecap="square"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <span class="icon">
-                                                    <svg viewBox="0 0 13 10" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M12.823 4.164L8.954.182a.592.592 0 0 0-.854 0 .635.635 0 0 0 0 .88l2.836 2.92H.604A.614.614 0 0 0 0 4.604c0 .344.27.622.604.622h10.332L8.1 8.146a.635.635 0 0 0 0 .88.594.594 0 0 0 .854 0l3.869-3.982a.635.635 0 0 0 0-.88z" fill-rule="nonzero" fill="#00396B" class="fill-main"/>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
                             </div>
                         </div>
                     </div>

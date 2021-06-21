@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="style-orange-1  custom_fonts comps live_website">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'css/home.css' %}">
+        <script src="{% static 'js/home.js' %}" defer></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+        <script>
+            function SubForm (){
+                $.ajax({
+                    url:'https://api.apispreadsheets.com/data/12737/',
+                    type:'post',
+                    data:$("#landing-form").serializeArray(),
+                    success: function(){
+                      alert("Gracias por apuntarte! :)")
+                    },
+                    error: function(){
+                      alert("There was an error :(")
+                    }
+                });
+            }
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-QYY89HFMG8"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());		
+
+		  gtag('config', 'G-QYY89HFMG8');
+		</script>   
+        <title>HypeHunter</title>    
+    </head>
+    <body class="font-lato comps" id="114878-243817">
+        <nav class="js-nav nav-02 ">
+            <div class="container container--large">
+                <div class="nav-02__box">
+                    <div class="nav-02__logo"><a class="nav-02__link" href="/" target="_self">
+                        <img loading="lazy" class="nav-02__logo_img" src="https://ucarecdn.com/d3ca1957-387b-4fc0-91dd-c93fd5d1cb8f/" height="60"
+                            alt="Logo transparent background"/>
+                        </a>
+                    </div>
+                    <div class="nav-02__links js-menu">
+                        <div class="nav-02__list_wrapper  ">
+                            <ul class="nav-02__list nav-02__list--desktop">
+                                <li class="nav-02__item">
+                                    <div class="buttons-set">
+                                        <ul class="buttons-set__list"></ul>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="nav-02__list nav-02__list--mobile">
+                                <li class="nav-02__item">
+                                    <div class="buttons-set">
+                                        <ul class="buttons-set__list"></ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="page-component__bg_image_box bg-white-color  first_component   " id="header-61-689691" >
+            <div class="page-component__bg_overlay_box ">
+            </div>
+            <div style="position: relative;z-index: 12;">
+                <header class="header-61 desktop-mockup-inside--apple_macbook_air">
+                    <div class="container container--large header-61__container">
+                        <div class="header-61__left">
+                            <div class="header-61__left_content">
+                                <div class="header-61__left_content_box">
+                                    <h1 class="heading heading--accent header-61__heading " >Gracias por facilitarnos tu mail</h1>
+                                    <div class="header-61__text content_box ">
+                                        <p>¡Pronto tendrás notícias nuestras!</p>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </header>
+            </div>
+        </div>        
+        <style>
+            .page-component__bg_image_box .page-component__bg_image_box .page-component__bg_overlay_box {
+            position: relative;
+            }
+            body .page-component__bg_overlay_box {
+            position: absolute;
+            }
+            .footer-02__text.content_box a{
+            color: inherit !important;
+            }
+            .footer-04__info{
+            font-size: 14px;
+            }
+        </style>
+    </body>
+</html>
