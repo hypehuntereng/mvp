@@ -21,3 +21,6 @@ def lila(request):
 
 def thank_you(request):
     return render(request, 'objects/thank_you.html', {})
+
+def profile(request):
+    return render(request, 'profile.html', {})
