@@ -1,0 +1,205 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="style-orange-1  custom_fonts comps live_website">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'css/home.css' %}">
+        <script src="{% static 'js/home.js' %}" defer></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+        <script>
+            function SubForm (){
+                $.ajax({
+                    url:'https://api.apispreadsheets.com/data/12737/',
+                    type:'post',
+                    data:$("#landing-form").serializeArray(),
+                    success: function(){
+                      alert("Gracias por apuntarte! :)"),
+                      window.location = "http://hypehunter.io/landing.html";
+                    },
+                    error: function(){
+                      alert("There was an error :(")
+                    }
+                });
+            }
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-QYY89HFMG8"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());		
+
+		  gtag('config', 'G-QYY89HFMG8');
+		</script>        
+        <title>HypeHunter</title>
+    </head>
+    <body class="font-lato comps" id="114878-244180">
+        <nav class="js-nav nav-02 nav-02--static">
+            <div class="container container--large">
+                <div class="nav-02__box">
+                    <div class="nav-02__logo"><a class="nav-02__link" href="/" target="_self">
+                        <img loading="lazy" class="nav-02__logo_img" src="https://ucarecdn.com/d3ca1957-387b-4fc0-91dd-c93fd5d1cb8f/" height="60"
+                            alt="Logo transparent background"/>
+                        </a>
+                    </div>
+                    <div class="nav-02__links js-menu">
+                        <div class="nav-02__list_wrapper  ">
+                            <ul class="nav-02__list nav-02__list--desktop">
+                                <li class="nav-02__item">
+                                </li>
+                            </ul>
+                            <ul class="nav-02__list nav-02__list--mobile">
+                                <li class="nav-02__item">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="page-component__bg_image_box bg-white-color  first_component   " id="cta_form-04-231021" >
+            <div class="page-component__bg_overlay_box ">
+            </div>
+            <div style="position: relative;z-index: 10;">
+                <div class="cta_form-04">
+                    <div class="container container--mid">
+                        <div class="cta_form-04__wrapper">
+                            <div class="cta_form-04__top">
+                                <div class="cta_form-04__heading_box">
+                                    <div class="container container--small">
+                                        <div class="title-box title-box--center">
+                                            <h1 class="heading " >Hola! Has llegado antes de que estemos listos.</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cta_form-04__form_box">
+                                    <form class="form   js-no-integration-form" id="landing-form" action="" method="GET" data-sheet-id="" >
+                                        <div class="form__inputs">
+                                            <div class="form__input  ">
+                                                <br>
+                                                <div class="form__input__label_box">
+                                                    <label class="form__input__label " for="EMAIL-14878-1">Estamos trabajando duro para darle los toques finales a HypeHunter. Las cosas van bien y debería estar listo para ayudarte pronto. Si desea disfrutar de la versión beta a un precio reducido cuando esté lista, simplemente ingrese su correo electrónico a continuación: 
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form__inputs" style="display: none;">
+                                            <div class="form__input  ">
+                                                <br>
+                                                <div class="form__input__label_box">
+                                                    <label class="form__input__label " for="EMAIL-14878-1">
+                                                    <span class="form__input__label_asterix" title="This field is required.">*</span>
+                                                    Tarifa
+                                                    </label>
+                                                </div>
+                                                <input class="text-input js-form-input " type="text" value="BRONCE" name="tarifa" />
+                                            </div>
+                                        </div>
+                                        <div class="form__inputs">
+                                            <div class="form__input  ">
+                                                <br>
+                                                <div class="form__input__label_box">
+                                                    <label class="form__input__label " for="EMAIL-14878-1"></label>
+                                                </div>
+                                                <input class="text-input js-form-input " type="email" id="EMAIL-14878-1" name="email" required placeholder="Tu Email"/>
+                                            </div>
+                                            <div class="form__button  ">
+                                                <button class="button js-submit-button button--accent-bg" type="submit" onclick="SubForm()">
+                                                    <span class="button__text">Avísame</span>
+                                                    <div class="spinner"></div>
+                                                    <div class="button__submit_success">
+                                                        <div class="button__success_circle "></div>
+                                                        <div>
+                                                            <svg class="button__success_tick" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                                                                <path class="button__success_tick_path" stroke="#FFF" d="M0 8l5.119 3.873L11.709.381" fill="none" fill-rule="evenodd" stroke-linecap="square"/>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <span class="icon">
+                                                        <svg viewBox="0 0 13 10" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12.823 4.164L8.954.182a.592.592 0 0 0-.854 0 .635.635 0 0 0 0 .88l2.836 2.92H.604A.614.614 0 0 0 0 4.604c0 .344.27.622.604.622h10.332L8.1 8.146a.635.635 0 0 0 0 .88.594.594 0 0 0 .854 0l3.869-3.982a.635.635 0 0 0 0-.88z" fill-rule="nonzero" fill="#00396B" class="fill-main"/>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </div>                                         
+                                        </div>
+                                    </form>
+                                    <ul class="cta_form-04__features">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-black-color  text-white ">
+            <footer class="footer-02">
+                <div class="container">
+                    <div class="footer-02__wrapper">
+                        <div class="footer-02__text content_box">
+                            &copy; 2021&nbsp;
+                            <p>HypeHunter All rights reserved.</p>
+                        </div>
+                        <div class="social-buttons  ">
+                            <ul class="social-buttons__list"></ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="pswp__bg"></div>
+            <div class="pswp__scroll-wrap">
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+                <div class="pswp__ui pswp__ui--hidden">
+                    <div class="pswp__top-bar">
+                        <div class="pswp__counter"></div>
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div>
+                    </div>
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .page-component__bg_image_box .page-component__bg_image_box .page-component__bg_overlay_box {
+            position: relative;
+            }
+            body .page-component__bg_overlay_box {
+            position: absolute;
+            }
+            .footer-02__text.content_box a{
+            color: inherit !important;
+            }
+            .footer-04__info{
+            font-size: 14px;
+            }
+        </style>
+    </body>
+</html>
